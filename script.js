@@ -2,7 +2,7 @@ let a = document.getElementById("form");
 let api_key = "45f40e0a2a6708c11064faa118afb498"
 function fetcher(){
     let city = document.getElementById("city").value;
-    data1 = fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${api_key}`)
+    data1 = fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${api_key}`)
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not OK');
