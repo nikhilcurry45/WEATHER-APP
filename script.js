@@ -75,7 +75,6 @@ btn.style.border = 'none';
 btn.style.borderRadius = '5px';
 btn.style.cursor = 'pointer';
 
-// 👇 Add the click event to reload the page
 btn.addEventListener('click',function(){
     location.reload();
 })
