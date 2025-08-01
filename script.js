@@ -11,7 +11,7 @@ function fetcher(){
         alert("Please enter a valid city name.");
         return;
     }
-    data1 = fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${api_key}`)
+    data1 = fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${api_key}`)
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not OK');
